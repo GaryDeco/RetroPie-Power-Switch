@@ -1,3 +1,34 @@
-# RetroPie arcade Power Switch
+# RetroPie Arcade Power Switch
 * The system setup is an 8 Gb  raspberry pi 4 running the latest retropie version as of July 14, 2021.
 * This script uses a rocker switch attached to gpio pin 3 on the raspberry pi 4 to allow switch control over the shutdown process and start up process. Since the raspberry pi needs to be shutdown properly through the retropie menu, this provides an easier user interaction which is ideal for an arcade setup. 
+
+## Installation
+
+1. [Connect to your Raspberry Pi via SSH](https://howchoo.com/g/mgi3mdnlnjq/how-to-log-in-to-a-raspberry-pi-via-ssh)
+1. Clone this repo: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
+1. Run the setup script: `./powerSwitch/script/install`
+
+## Uninstallation
+
+If you need to uninstall the power button script in order to use GPIO3 for another project or something:
+
+1. Run the uninstall script: `./powerSwitch/script/uninstall`
+
+## Hardware
+
+A full list of what you'll need can be found $$$
+
+Connect the power button to Pin 5 (GPIO 3/SCL) and Pin 6 (GND) as shown in this diagram:
+
+![Connection Diagram](https://raw.githubusercontent.com/KozmoKode/RetroPie-Power-Switch/master/diagrams/powerbutton.png)
+
+### Is it possible to use another pin other than Pin 5 (GPIO 3/SCL)?
+
+Not for full functionality, no. There are two main features of the power button:
+
+1. **Shutdown functionality:** Shut the Pi down safely when the button is pressed. The Pi now consumes zero power.
+1. **Wake functionality:** Turn the Pi back on when the button is pressed again.
+
+The **wake functionality** requires the SCL pin, Pin 5 (GPIO 3). There's simply no other pin that can "hardware" wake the Pi from a zero-power state. If you don't care about turning the Pi back _on_ using the power button, you could use a different GPIO pin for the **shutdown functionality** and still have a working shutdown button. Then, to turn the Pi back on, you'll just need to disconnect and reconnect power (or use a cord with a physical switch in it) to "wake" the Pi.
+
+Of course, for the GND connection, you can use [any other ground pin you want](https://pinout.xyz/).
