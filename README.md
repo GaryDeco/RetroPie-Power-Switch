@@ -7,8 +7,8 @@
 
 ## Installation
 
-1.[Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/)
-* Note that there are a number of ways to do this. You can use a stand alone application such as winSCP or putty. Read the raspberry pi docs to learn how. 
+1. [Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/), 
+Note that there are a number of ways to do this. You can use a stand alone application such as winSCP or putty. Read the raspberry pi docs to learn how. 
 2. Clone this repo by typing this into the bash terminal: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
 3. Run the setup script in the bash terminal: `./powerSwitch/script/install`
 
