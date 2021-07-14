@@ -4,15 +4,15 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=> Installing shutdown listener...\n"
-sudo cp listen-for-shutdown.py /usr/local/bin/
-sudo chmod +x /usr/local/bin/listen-for-shutdown.py
+echo "=> Installing Powerswitch...\n"
+sudo cp powerswitch.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/powerswitch.py
 
-echo "=> Starting shutdown listener...\n"
-sudo cp listen-for-shutdown.sh /etc/init.d/
-sudo chmod +x /etc/init.d/listen-for-shutdown.sh
+echo "=> Starting Powerswitch...\n"
+sudo cp powerswitch.sh /etc/init.d/
+sudo chmod +x /etc/init.d/powerswitch.sh
 
-sudo update-rc.d listen-for-shutdown.sh defaults
-sudo /etc/init.d/listen-for-shutdown.sh start
+sudo update-rc.d powerswitch.sh defaults
+sudo /etc/init.d/powerswitch.sh start
 
-echo "Shutdown listener installed.\n"
+echo "Powerswitch installed.\n"
