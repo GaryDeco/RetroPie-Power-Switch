@@ -20,7 +20,7 @@ A full list of what you'll need can be found $$$
 
 Connect the power button to Pin 5 (GPIO 3/SCL) and Pin 6 (GND) as shown in this diagram:
 
-![Connection Diagram](https://raw.githubusercontent.com/Howchoo/pi-power-button/master/diagrams/pinout.png)
+![Connection Diagram](https://raw.githubusercontent.com/KozmoKode/RetroPie-Power-Switch/master/diagrams/powerbutton.png)
 
 ### Is it possible to use another pin other than Pin 5 (GPIO 3/SCL)?
 
