@@ -1,4 +1,4 @@
-# RetroPie arcade Power Switch
+# RetroPie Arcade Power Switch
 * The system setup is an 8 Gb  raspberry pi 4 running the latest retropie version as of July 14, 2021.
 * This script uses a rocker switch attached to gpio pin 3 on the raspberry pi 4 to allow switch control over the shutdown process and start up process. Since the raspberry pi needs to be shutdown properly through the retropie menu, this provides an easier user interaction which is ideal for an arcade setup. 
 
