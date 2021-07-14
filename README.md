@@ -7,20 +7,21 @@
 
 ## Installation
 
-1. [Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/)
+1.![Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 * Note that there are a number of ways to do this. You can use a stand alone application such as winSCP or putty. Read the raspberry pi docs to learn how. 
-3. Clone this repo: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
-4. Run the setup script: `./powerSwitch/script/install`
+2. Clone this repo by typing this into the bash terminal: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
+3. Run the setup script in the bash terminal: `./powerSwitch/script/install`
 
 ## Uninstallation
 
 If you need to uninstall the power button script in order to use GPIO3 for another project or something:
 
-1. Run the uninstall script: `./powerSwitch/script/uninstall`
+1. Run the uninstall script in the bash terminal: `./powerSwitch/script/uninstall`
 
 ## Hardware
 
-A full list of what you'll need can be found $$$
+* Raspberry pi 4 B (I am using 8 Gb model but it does not matter)
+* ![Rocker Switch](https://www.amazon.com/DaierTek-Rocker-Switch-Household-Appliances/dp/B07S1MV462/ref=sr_1_13?crid=RHIY2XUYRN78&dchild=1&keywords=rocker+switch&qid=1626291624&sprefix=rocker+sw%2Caps%2C196&sr=8-13) 
 
 Connect the power button to Pin 5 (GPIO 3/SCL) and Pin 14 (GND) as shown in this diagram (note that any ground pin will work):
 
