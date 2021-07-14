@@ -4,12 +4,12 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=> Stopping Powerswitch...\n"
-sudo update-rc.d powerswitch.sh remove
-sudo /etc/init.d/powerswitch.sh stop
+echo "=> Stopping Power-switch...\n"
+sudo update-rc.d power-switch.sh remove
+sudo /etc/init.d/power-switch.sh stop
 
-echo "=> Removing Powerswitch...\n"
-sudo rm -rf /usr/local/bin/powerswitch.py 
-sudo rm -rf /etc/init.d/powerswitch.sh 
+echo "=> Removing Power-switch...\n"
+sudo rm -rf /usr/local/bin/power-switch.py 
+sudo rm -rf /etc/init.d/power-switch.sh 
 
-echo "Powerswitch uninstalled.\n"
+echo "Power-switch uninstalled.\n"

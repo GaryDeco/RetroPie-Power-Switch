@@ -4,15 +4,15 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=> Installing Powerswitch...\n"
-sudo cp powerswitch.py /usr/local/bin/
-sudo chmod +x /usr/local/bin/powerswitch.py
+echo "=> Installing Power-switch...\n"
+sudo cp power-switch.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/power-switch.py
 
-echo "=> Starting Powerswitch...\n"
-sudo cp powerswitch.sh /etc/init.d/
-sudo chmod +x /etc/init.d/powerswitch.sh
+echo "=> Starting Power-switch...\n"
+sudo cp power-switch.sh /etc/init.d/
+sudo chmod +x /etc/init.d/power-switch.sh
 
-sudo update-rc.d powerswitch.sh defaults
-sudo /etc/init.d/powerswitch.sh start
+sudo update-rc.d power-switch.sh defaults
+sudo /etc/init.d/power-switch.sh start
 
-echo "Powerswitch installed.\n"
+echo "Power-switch installed.\n"

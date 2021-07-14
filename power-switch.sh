@@ -17,11 +17,11 @@ case "$1" in
     /usr/local/bin/powerswitch.py &
     ;;
   stop)
-    echo "Stopping powerswitch.py"
-    pkill -f /usr/local/bin/powerswitch.py
+    echo "Stopping power-switch.py"
+    pkill -f /usr/local/bin/power-switch.py
     ;;
   *)
-    echo "Usage: /etc/init.d/powerswitch.sh {start|stop}"
+    echo "Usage: /etc/init.d/power-switch.sh {start|stop}"
     exit 1
     ;;
 esac
