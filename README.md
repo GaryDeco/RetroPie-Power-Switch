@@ -27,6 +27,8 @@ If you need to uninstall the power button script in order to use GPIO3 for anoth
 Connect the power button to Pin 5 (GPIO 3/SCL) and Pin 14 (GND) as shown in this diagram (note that any ground pin will work):
 
 * GPIO3 is the only pin that will allow both the Shutdown and Wake functionality ([details](https://pinout.xyz/pinout/i2c)).
+
+
 ![Connection Diagram](https://raw.githubusercontent.com/KozmoKode/RetroPie-Power-Switch/master/diagrams/powerbutton.png)
 
 ### Is it possible to use another pin other than Pin 5 (GPIO 3/SCL)?
