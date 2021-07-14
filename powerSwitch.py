@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#updated again
+#updated 
 
 import RPi.GPIO as GPIO
 import subprocess
