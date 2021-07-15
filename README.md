@@ -26,7 +26,7 @@ If you need to uninstall the Power Switch script for any reason.
 
 1. Run the uninstall script in the bash terminal: `cd home/pi/RetroPie-Power-Switch/script/`, and then: `bash uninstall`
 2. To remove the directory from the file system: `cd home/pi/`, and then: `rm -rf RetroPie-Power-Switch`
-    * You can confirm deletion after you reboot and use `ls` to return a list of all folders in the root directory.
+    * You can confirm deletion by using `ls` to return a list of all folders in the root directory.
 
 ## Hardware
 
