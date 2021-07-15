@@ -19,7 +19,7 @@ Note that there are a number of ways to do this.
 
 ## Uninstallation
 
-If you need to uninstall the power button script in order to use GPIO3 for another project or something:
+If you need to uninstall the Power Switch script for any reason. 
 
 1. Run the uninstall script in the bash terminal: `cd home/pi/RetroPie-Power-Switch/script/`, and then: `bash uninstall`
 2. To remove the directory from the file system: `cd home/pi/`, and then: `rm -rf RetroPie-Power-Switch`
