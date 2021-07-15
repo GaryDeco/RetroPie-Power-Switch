@@ -6,7 +6,7 @@
 2. **Wake:** Turn the Pi back on when the switch is returned to the "on" position.
 
 ## Installation
-
+1. Make sure that the rocker switch is initially in the "on" position before turning on the raspberry pi. 
 1. Interacting with Raspberry pi
     * Option 1: [Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/), 
 Note that there are a number of ways to do this. 
@@ -15,6 +15,9 @@ Note that there are a number of ways to do this.
 3. Clone this repo by typing this into the bash terminal: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
 4. To Navigate to the folder containing the install script, type this: `cd RetroPie-Power-Switch/script/`
 5. Run the setup script in the bash terminal by typing this: `bash install`
+      * The script is now running and listening for the switch to change states
+6. Test the shutdown functionality by flipping the switch to the "off" position. The system should shutdown. 
+7. Test the wake functionality by flipping the switch to the "on" position. The system should turn on and load properly. 
 
 
 ## Uninstallation
