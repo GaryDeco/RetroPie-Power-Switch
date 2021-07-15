@@ -7,17 +7,23 @@
 
 ## Installation
 
-1. [Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/), 
-Note that there are a number of ways to do this. You can use a stand alone application such as winSCP or putty. Read the raspberry pi docs to learn how. 
-2. Make sure git is installed by typing this into bash terminal `sudo apt-get install git`
+1. Interacting with Raspberry pi
+    * Option 1: [Connect to your Raspberry Pi via SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/), 
+Note that there are a number of ways to do this. 
+    * Option 2: Bring up RetroPie bash terminal by pressing F4 on a keyboard attached to Raspberry pi.  
+2. Make sure git is installed by typing this into bash terminal: `sudo apt-get install git`
 3. Clone this repo by typing this into the bash terminal: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
-4. Run the setup script in the bash terminal: `./RetroPie-Power-Switch/script/install`
+4. To Navigate to the folder containing the install script, type this: `cd RetroPie-Power-Switch/script/`
+5. Run the setup script in the bash terminal by typing this: `bash install`
+
 
 ## Uninstallation
 
 If you need to uninstall the power button script in order to use GPIO3 for another project or something:
 
-1. Run the uninstall script in the bash terminal: `./RetroPie-Power-Switch/script/uninstall`
+1. Run the uninstall script in the bash terminal: `cd home/pi/RetroPie-Power-Switch/script/`, and then: `bash uninstall`
+2. To remove the directory from the file system: `cd home/pi/`, and then: `rm -rf RetroPie-Power-Switch`
+    * You can confirm deletion after you reboot and use `ls` to return a list of all folders in the root directory.
 
 ## Hardware
 
