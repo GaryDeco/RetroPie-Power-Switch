@@ -14,7 +14,7 @@
 case "$1" in
   start)
     echo "Starting powerswitch.py"
-    /usr/local/bin/powerswitch.py &
+    /usr/local/bin/power-switch.py &
     ;;
   stop)
     echo "Stopping power-switch.py"
