@@ -2,7 +2,7 @@
 * The system setup is an 8 Gb  raspberry pi 4 running retropie version 4.7.
 * This script uses a rocker switch attached to GPIO3 (pin 5) on the raspberry pi 4 to allow switch control over the shutdown process and start up process. Since the raspberry pi needs to be shutdown properly through the retropie menu, this provides an easier user interaction which is ideal for an arcade setup. 
 * This script provides 2 main functions
-1. **Shutdown:** Shut the Pi down safely when the switch is moved to the "off" position. The Pi now consumes zero power.
+1. **Shutdown:** Shut the Pi down safely when the switch is moved to the "off" position. The Pi now consumes very little power.
 2. **Wake:** Turn the Pi back on when the switch is returned to the "on" position.
 
 ## Installation
