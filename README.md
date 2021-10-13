@@ -12,7 +12,7 @@
 Note that there are a number of ways to do this. 
     * Option 2: Bring up RetroPie bash terminal by pressing F4 on a keyboard attached to Raspberry pi.  
 2. Make sure git is installed by typing this into bash terminal: `sudo apt-get install git`
-3. Clone this repo by typing this into the bash terminal: `git clone https://github.com/KozmoKode/RetroPie-Power-Switch.git`
+3. Clone this repo by typing this into the bash terminal: `git clone https://github.com/GaryDeco/RetroPie-Power-Switch.git`
 4. To Navigate to the folder containing the install script, type this: `cd RetroPie-Power-Switch/script/`
 5. Run the setup script in the bash terminal by typing this: `bash install`
       * The script is now running and listening for the switch to change states
